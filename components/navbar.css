@@ -1,0 +1,148 @@
+.navigation li{
+    display: inline-block;
+    margin: 0 0.3rem;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--white-color);
+    z-index: var(--z-index-3);
+}
+
+.docs .header{
+    position: static;
+    z-index: var(--z-index-1);
+}
+
+.header .logo{
+    color: var(--primary-color);
+    font-weight: 200;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--lynx-gray-color);
+    border-radius: var(--border-radius);
+    padding: 0 0.5rem;
+}
+
+.search-box input{
+    border: none;
+    flex-grow: 1;
+}
+
+.search-box .fa-search{
+    padding: 0.5rem;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+.header .fa-bars, .hamburger-menu{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.hamburger-menu{
+    height: 93.3vh;
+    width: 35vw;
+    position: fixed;
+    left: 0;
+    top: 4.07rem;
+    background-color: var(--white-color);
+    overflow-y: auto;
+    z-index: var(--z-index-5);
+}
+
+.hamburger-menu ul{
+    margin-bottom: 1rem;
+}
+
+.hamburger-menu li{
+    list-style: none;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius);
+}
+
+.hamburger-menu a:hover{
+    background-color: var(--primary-color-lighter);
+    color: var(--primary-color);
+}
+
+.hamburger-menu li a{
+    color: var(--text-color);
+    width: 100%;
+    padding: 0.8rem 3rem;
+}
+
+.hamburger-menu h3{
+    padding: 0.8rem 3rem;
+}
+
+.hamburger-menu li:first-child{
+    background-color: var(--primary-color);
+    border-radius: 0;
+    padding: 1rem;
+}
+
+.hamburger-logo-wrapper{
+    display: flex;
+}
+
+.header > button{
+    background-color: var(--white-color);
+}
+
+.hamburger-logo-wrapper button{
+    background-color: var(--white-color);
+}
+
+.header .fa-bars{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin: 0 0.9rem;
+}
+
+/* || media queries */
+
+@media only screen and (max-width:1024px){
+    .header .fa-bars{
+        display: inline-block;
+    }
+    
+    .header .nav-hide{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:810px){
+    .search-box{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .search-box input{
+        flex-grow: 1;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .hamburger-menu{
+        width: 50vw;
+    }
+}

@@ -25,3 +25,20 @@
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
+
+/* Secondary Button */
+.btn-secondary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn-secondary:hover{
+    color: var(--text-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color-400);
+}
+
+.btn-secondary-link {
+    color: var(--text-color);
+}
